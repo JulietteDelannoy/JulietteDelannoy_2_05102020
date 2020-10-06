@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Header -->
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="P2_02_style.css" />
+		<title>Reservia</title>
+		<figure> 
+		<img src="Projet2Reservia/images/logo/reserviapng.png" alt="Logo Reservia"/>
+	</figure>
+		<!--attention a modifier avec l'image-->
+		<nav> <!--lien de navigation dans la page-->
+			<ul>
+				<li> <a href="#hebergement">Hébergement</a></li>
+				<li> <a href="#activite">Activités</a></li>
+				<li><a href="#">S'inscrire</a></li>
+			</ul>
 
+		</nav>
+
+   </head>
+
+<body>
+
+   
+   
+   <!-- Section 1 titre-->
+<section>
+	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+	En plein centre de ville ou en pleine nature
+	<br/>
+		
+
+
+
+
+	<!--moteur de recherche lieu-->
+
+</section>
+
+   <!-- Section 2 Moteur recherche -->
+<section>
+	Filtres
+</section>
+
+   <!-- Section 3 Hebergement -->
+<section>
+	<h1 id="hebergement">Hébergement à Marseille</h1>
+
+	<p> 
+		<h3>Auberge la Cannebière </h3><br/>
+		Nuit à partir de 25€
+
+	</p>
+
+	<p>
+		<h3>Hôtel du port</h3><br/>
+		Nuit à partir de 53€
+		
+	</p>
+	<p>
+		<h3>Hôtel Les mouettes</h3><br/>
+		Nuit à partir de 76€
+		
+	</p>
+	<p>
+		<h3>Hôtel de la mer</h3><br/>
+		Nuit à partir de 46€
+		
+	</p>
+	<p>
+		<h3>Auberge Le Panier</h3><br/>
+		Nuit à partir de 23€
+		
+	</p>
+
+	<p>
+		<h3>Hôtel chez Amina</h3><br/>
+		Nuit à partir de 96€
+		
+	</p>
+
+Afficher plus
+
+</section>
+
+   <!-- Section 4 Les plus populaires -->
+<section>
+	<h1>Les plus populaires </h1>	
+
+	<p>
+		<h3>Hôtel Le soleil du matin</h3><br/>
+		Nuit à partir de 128€
+		
+	</p><p>
+		<h3>Au coeur de l'eau Chambres d'hôtes</h3><br/>
+		Nuit à partir de 71€
+		
+	</p><p>
+		<h3>Hôtel Tout bleu et Blanc</h3><br/>
+		Nuit à partir de 68€
+		
+	</p>
+</section>
+
+   <!-- Section 5 Activité a Marseille -->
+   
+<section>
+	<h1 id="activite">Activités à Marseille</h1>
+
+</p><p>
+	<h4>Vieux port</h4><br/>
+	<h4>Fort de Pomègues</h4><br/>
+	<h4>Iles du Frioul</h4><br/>
+	<h4>Parc National des Calanques</h4><br/>
+	<h4>Notre-Dame-de-la-Garde</h4><br/>
+	<h4>Parc Longchamp</h4><br/>
+
+</p>
+</section>
+
+   
+
+</body>
+
+<!-- Footer -->
+<footer>
+	
+	<ul><h2> A propos</h2>
+		<li>Fonctionnement du site</li>
+		<li>Condition générales de vente</li>
+		<li>Données et confidentialités</li>
+	</ul>
+
+<ul> <h2>Nos hébergements </h2>
+	<li>Charte qualité</li>
+	<li>Soumettre votre hôtel</li>
+</ul>
+
+<ul> <h2>Assistance </h2>
+	<li>Centre d'aide</li>
+	<li>Nous contacter</li>
+
+</ul>
+
+</footer>
+
+</html> 
