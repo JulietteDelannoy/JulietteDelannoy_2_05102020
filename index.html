@@ -5,15 +5,15 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css"/> 
-		<link rel="stylesheet" href ="reservia_files/all.min.css"/> <!-- dossier icones-->
+		<link rel="stylesheet" href ="reservia_files/fontawesome-free-5.15.1-web/css/all.min.css"/> <!-- dossier icones-->
 		<title>Reservia</title>
    </head>	
 <body>
 
-<!--Header-->
-<header id="mobile">
+<!--Header mobile-->
+<header class="mobile">
 
-    <div class="top_line">
+    <div class="top_line"> 
         <img src="reservia_files/Reservia.svg" alt="Reservia"/>
         <p><a href="#" class="subscrib">S'inscrire</a> </p>
 
@@ -26,5 +26,102 @@
 
     
 </nav>
-
 </header>
+
+<!--Header destop-->
+<header class="destop">
+
+    <div class="top_line"> 
+        <img src="reservia_files/Reservia.svg" alt="Reservia"/>
+        
+
+    </div>
+<nav>
+    <ul class="top_line">
+       <li><a href="#"> Hébergements</a></li> <!--Ancre a rajouter-->
+    <li><a href="#"> Activités</a></li>
+    <li><a href="#" class="subscrib">S'inscrire</a></li> 
+    </ul>
+
+    
+</nav>
+</header>
+
+  
+   <!-- Section 1 titre-->
+<section class="title">
+	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+	<p>	En plein centre ville ou en pleine nature</p>
+
+	
+</section>
+	<!--moteur de recherche lieu pour mobile-->
+	
+    <section >
+
+        <p>
+            <div class="search_place">
+                
+                <i class="fas fa-map-marker-alt"></i>
+                   
+                     <form method="post" action="traitement.php" class="form">
+        
+                     <input type="text" name="ville" class="ville" placeholder="Marseille, France" size="20" maxlenght="20"/>
+                     <button type="button" class="button">
+                         <span class="button_destop">Rechercher</span> <!--bouton pour destop -->
+                         <i class="fas fa-search"></i> <!--bouton pour mobile-->
+                    </button>
+                 
+                
+           
+                </form>
+        
+            
+            </div>
+        </p>
+
+</section>
+
+ <!-- Section 2 Selection options -->
+<section class="search_option">
+	<h3> Filtres </h3>
+
+<p>
+	<div class="filter">
+		<p><i class="fas fa-money-bill-wave"></i></p>
+		<p>Économique</p>
+	</div>
+
+</p>
+
+<p>
+	<div class="filter">
+		<p><i class="fas fa-child"></i></p>
+		<p>Familial</p>
+	</div>
+
+</p>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-heart"></i></p>
+		<p>Romantique</p>
+	</div>
+
+</p>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-dog"></i></p>
+		<p>Animaux autorisés</p>
+	</div>
+
+</p>
+
+
+</section>
+
+<section class="disponible">
+<i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+	
+</section>	
+	
+

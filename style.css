@@ -31,7 +31,7 @@ ul
 
 .top_line img
 {
-    width: 7em;
+    height: 3em;
     margin-left:1.2em; 
 }
 .subscrib
@@ -72,10 +72,266 @@ ul
     border-bottom: 3px solid #F2F2F2;
 }
 
+
+
+.destop
+{
+display: flex;
+justify-content: space-between;
+
+}
+
+.destop img
+{
+    margin: 1.8em;
+}
+
+/*body*/
+
+h1
+{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+.title
+{
+    
+    margin: 1.2em;
+    margin-right: 2.5em;
+}
+.title p
+{
+    font-weight: 500;
+}
+
+/*filtre lieu */
+
+.search_place
+{
+    display: flex;
+    margin: 1.2em;
+   min-height: 50px;
+   min-width: 340px;
+  
+}
+
+.search_place :first-child
+{
+   padding: 1em;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search_place :last-child
+{
+    background-color: #0065FC;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.button
+{
+
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border-right:#0065FC ;
+    border-radius: 0 10px 10px 0;
+    padding: 0.5em;
+       
+    }
+
+/*filtre selection options */
+    
+
+.search_option
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    align-items: center;
+}
+
+.search_option h3
+{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+.search_option .fas
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 60px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+.filter p:last-child {
+    padding: 0 10px;
+}
+
+.filter {
+    height: 40px;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    margin: 0.5em;
+}
+
+.filter p {
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+}
+    
+
+.filter p:last-child {
+    padding: 0 10px;
+}
+
+
+
+.filter:hover
+{
+    border: 3px solid #0065FC;
+    cursor: pointer;
+
+}
+
+.filtre:hover  p
+{
+border:none
+}
+
+
+.disponible
+{
+    margin: 1em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.disponible .fas 
+
+{
+
+    color: #0065FC;
+    border: 1px solid #DEEBFF ;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 0.3em 0.7em;
+    width: 0.1em;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.2em; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* règles CSS pour  mobiles  */
+@media all and (max-width: 990px)
+{
+
+ 
+.destop 
+{
+    display: none;
+}
+
 .top_line li a:hover
 {
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
     padding-bottom: 1.3em;
     cursor: pointer;
+}
+.search_place .button_destop
+{
+    display: none;
+}
+
+.search_option h3
+{
+    width: 100%;
+}
+
+}
+
+
+/* règles CSS pour  tablette  */
+@media all and (min-width:991px) and (max-width: 1584px)
+
+{
+ 
+ .mobile
+ {
+     display: none;
+ } 
+
+ .destop li
+{
+border: 0px;
+margin-left: 3em;
+padding-top: 2em;
+
+}
+.destop li :hover
+{
+    color: #0065FC;
+    border-top: #0065FC solid 3px;
+    cursor: pointer;
+}
+
+.search_place .button .fas
+{
+    display: none;
+}
+
+}
+ 
+/* règles CSS pour  ordi  */
+@media all and (min-width:1585px) 
+
+{
+
+    .mobile
+    {
+        display: none;
+    } 
+   
+    .destop li
+   {
+   border: 0px;
+   margin-left: 3em;
+   padding-top: 2em;
+   
+   }
+   .destop li :hover
+   {
+       color: #0065FC;
+       border-top: #0065FC solid 3px;
+       cursor: pointer;
+   }
+   
+   .search_place .button .fas
+   {
+       display: none;
+   }
+
+
 }
