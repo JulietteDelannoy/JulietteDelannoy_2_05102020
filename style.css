@@ -234,9 +234,37 @@ border:none
 }
 
 
+footer
+{
+    background-color:#F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    
+  width: 100%;
+  padding-top: 2em;
+   padding-bottom: 4em;
+}
+ul
+{
+    list-style-type: none;
+    
+}
 
+footer ul
+{
 
+  
+    font-size: 0.8rem;
+   
+}
 
+footer li
+{
+    justify-content: space-between;
+    padding-top: 0.6em;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 
 
 
@@ -268,6 +296,12 @@ border:none
 .search_option h3
 {
     width: 100%;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
 }
 
 }
@@ -302,6 +336,13 @@ padding-top: 2em;
     display: none;
 }
 
+
+footer .liste
+{
+
+    width: 28%;
+  
+}
 }
  
 /* règles CSS pour  ordi  */
@@ -333,5 +374,9 @@ padding-top: 2em;
        display: none;
    }
 
+   footer .liste
+{
+  width: 28%;
+}
 
 }
