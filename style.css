@@ -234,6 +234,60 @@ border:none
 }
 
 
+
+a figure :hover
+{
+color: #0065FC;
+font-weight: bold;
+transition-duration: 1s;
+
+
+}
+
+/*Activite*/
+.section2
+{
+    margin: 1em;
+}
+
+.activite h2
+{
+    font-size: 1em;
+    padding: 1em;
+    margin-top: 0px;
+}
+.activite figure
+
+{
+    
+    width: 100%;
+    max-width: 445px;
+    margin: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px #F2F2F2;  
+     
+}
+.activite p
+{
+    margin: 0px;
+}
+
+.activite figcaption
+{
+    height: 15%;
+}
+
+.activite img
+{
+   
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+/*footer*/
+
+
 footer
 {
     background-color:#F2F2F2;
@@ -266,6 +320,11 @@ footer li
     font-weight: 500;
 }
 
+footer li a:hover
+{
+    font-weight: bolder;
+    color: #0065FC;
+}
 
 
 
@@ -298,6 +357,21 @@ footer li
     width: 100%;
 }
 
+
+
+.activite figcaption
+{
+    height: 15%;
+}
+
+.activite img
+{
+    height: auto;
+    width: 100%;
+    max-height: 130px;
+    border-radius: 15px 15px 0px 0px;
+}
+
 footer
 {
     display: flex;
@@ -308,7 +382,7 @@ footer
 
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:991px) and (max-width: 1584px)
+@media all and (min-width:991px) and (max-width: 1199px)
 
 {
  
@@ -336,6 +410,28 @@ padding-top: 2em;
     display: none;
 }
 
+.activite
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activite figure 
+{
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2em;
+    transition: 1s;
+}
+
+.activite img 
+{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+    /*footer tablette*/
 
 footer .liste
 {
@@ -346,7 +442,7 @@ footer .liste
 }
  
 /* règles CSS pour  ordi  */
-@media all and (min-width:1585px) 
+@media all and (min-width:1200px) 
 
 {
 
@@ -373,6 +469,68 @@ footer .liste
    {
        display: none;
    }
+
+/*Activité
+.activite figure
+{
+    
+    
+}*/
+   .activite
+   {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+        align-content: stretch;
+   }
+.high
+{
+    background-color: aqua;
+    min-height: 450px;
+    height: 100%;
+    
+}
+.activite .li 
+{
+    height: 100%;
+    width: 300px;
+}
+.high img
+{
+    min-height: 380px;
+}
+.activite figure
+
+{
+    
+    width: 100%;
+    max-width: 300px;
+    margin: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px #F2F2F2;  
+     
+}
+.activite figure .high
+{
+    height: 100%;
+}
+.activite figure .high img 
+{
+   height: 390px;
+
+}
+
+.activite figure .small
+{
+    max-height: 200px;
+}
+
+.activite figcaption
+{
+    
+    width: 100%;
+    max-height: 55px;
+}
 
    footer .liste
 {
