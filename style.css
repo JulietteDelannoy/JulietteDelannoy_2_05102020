@@ -233,6 +233,80 @@ border:none
     margin-right: 0.2em; 
 }
 
+/*section1 hebergement */
+
+.section1 h1
+{
+    margin: 1em;
+}
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2
+}
+
+.hotel figure
+
+{
+    border: #FFFFFF 3px solid;
+    border-radius: 15px;
+    box-shadow: #F2F2F2 0px 5px 8px ;
+    padding: 0px;
+    margin: 1em;
+    max-height: 200px;
+    max-width: 500px;
+   
+}
+
+.hotel 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotel img
+
+{
+    width: 100%;
+  max-height:115px ;
+  border-radius: 15px 15px 0px 0px;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+figure  p
+{
+    margin: 0px;
+    margin-bottom: 0.4em;
+    margin-left: 00.4em;
+        font-size: 0.9em;
+}
+
+figure h4
+{
+    margin: 0px;
+    margin-bottom: 0.4em;
+    margin-left: 00.6em;  
+
+}
+
+.price
+{
+    font-weight: bold;
+}
+
+
+/*section 2 activite*/
+
+
+/*footer*/
+
 
 footer
 {
