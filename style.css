@@ -301,6 +301,59 @@ figure h4
     font-weight: bold;
 }
 
+/*section 1 populaire*/
+
+.populaire
+{
+background-color: #F2F2F2;
+max-width: 418px;
+
+}
+
+.populaire h1
+
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding-top: 1.3em;
+}
+
+.populaire figure
+{
+    display: flex;
+   
+    height: 140px;
+    border: #FFFFFF 4px solid;
+    border-radius: 15px;
+    box-shadow: #F2F2F2 0px 5px 8px ;
+    margin: 0.4em;
+}
+.populaire p
+{
+    margin: 0px;
+}
+
+.populaire img 
+{
+    width: 30%;
+    min-width: 100px;
+    height: 100%;
+    margin: 0px;
+    border-radius: 15px 0px 0px 15px;
+    padding: 0px;
+
+}
+
+.populaire figcaption
+{
+    width: 70%;
+    min-width: 200px;
+    height: 100%;
+   background-color: #FFFFFF;
+
+}
+
 
 /*section 2 activite*/
 
@@ -317,6 +370,7 @@ footer
   width: 100%;
   padding-top: 2em;
    padding-bottom: 4em;
+   padding-left: 1em;
 }
 ul
 {
@@ -410,6 +464,24 @@ padding-top: 2em;
     display: none;
 }
 
+.section1
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.hosting
+{
+    background-color: #F2F2F2;
+    width: 70%;
+}
+
+.populaire
+{
+    width: 30%;
+}
+
 
 footer .liste
 {
@@ -447,6 +519,15 @@ footer .liste
    {
        display: none;
    }
+
+
+   .section1
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
 
    footer .liste
 {
