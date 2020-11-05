@@ -301,12 +301,23 @@ figure h4
     font-weight: bold;
 }
 
+
+a figure :hover
+{
+color: #0065FC;
+font-weight: bold;
+transition-duration: 1s;
+
+}
 /*section 1 populaire*/
 
 .populaire
 {
 background-color: #F2F2F2;
-max-width: 418px;
+max-width: 550px;
+padding: 1em;
+padding-bottom: 2em;
+
 
 }
 
@@ -315,29 +326,30 @@ max-width: 418px;
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
-    padding-top: 1.3em;
+  
 }
 
 .populaire figure
 {
     display: flex;
-   
+ 
     height: 140px;
-    border: #FFFFFF 4px solid;
+    border: #FFFFFF 5px solid;
     border-radius: 15px;
-    box-shadow: #F2F2F2 0px 5px 8px ;
+    box-shadow: #e2dfdf 0px 5px 8px ;
     margin: 0.4em;
 }
 .populaire p
 {
     margin: 0px;
+    font-weight: 500;
+ 
 }
 
 .populaire img 
 {
-    width: 30%;
-    min-width: 100px;
+    width: 40%;
+  
     height: 100%;
     margin: 0px;
     border-radius: 15px 0px 0px 15px;
@@ -347,18 +359,83 @@ max-width: 418px;
 
 .populaire figcaption
 {
-    width: 70%;
-    min-width: 200px;
+    width: 60%;
+ 
     height: 100%;
-   background-color: #FFFFFF;
-
+      background-color: #FFFFFF;
+   font-size: 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-left: 1em;
+   
 }
 
+.populaire aside
+{
+    padding-bottom: 1em;
+    font-size: 0.7em;
+}
+
+.populaire h4
+{
+    font-weight: 750;
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1.5em;
+}
 
 /*section 2 activite*/
 
 
+
+
+/*Activite*/
+.section2
+{
+    margin: 1em;
+}
+
+.activite h2
+{
+    font-size: 1em;
+    padding: 1em;
+    margin-top: 0px;
+}
+.activite figure
+
+{
+    
+    width: 100%;
+    max-width: 445px;
+    margin: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px #F2F2F2;  
+     
+}
+.activite p
+{
+    margin: 0px;
+}
+
+.activite figcaption
+{
+    height: 15%;
+}
+
+.activite img
+{
+   
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
 /*footer*/
+
+
+
 
 
 footer
@@ -394,6 +471,11 @@ footer li
     font-weight: 500;
 }
 
+footer li a:hover
+{
+    font-weight: bolder;
+    color: #0065FC;
+}
 
 
 
@@ -426,6 +508,21 @@ footer li
     width: 100%;
 }
 
+
+
+.activite figcaption
+{
+    height: 15%;
+}
+
+.activite img
+{
+    height: auto;
+    width: 100%;
+    max-height: 130px;
+    border-radius: 15px 15px 0px 0px;
+}
+
 footer
 {
     display: flex;
@@ -436,7 +533,7 @@ footer
 
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:991px) and (max-width: 1584px)
+@media all and (min-width:991px) and (max-width: 1199px)
 
 {
  
@@ -477,11 +574,56 @@ padding-top: 2em;
     width: 70%;
 }
 
-.populaire
+
+/*populaire*/
+
+.populaire figure
 {
-    width: 30%;
+    
+   
+   width: 340px;
+   width: 100%;
 }
 
+
+.populaire img 
+{
+    
+    width: 140px;
+    height: 100%;
+   
+}
+
+.populaire figcaption
+{
+    
+    width: 200px;
+    height: 100%;
+     
+   
+}
+.activite
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activite figure 
+{
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2em;
+    transition: 1s;
+}
+
+.activite img 
+{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+    /*footer tablette*/
 
 footer .liste
 {
@@ -492,7 +634,7 @@ footer .liste
 }
  
 /* règles CSS pour  ordi  */
-@media all and (min-width:1585px) 
+@media all and (min-width:1200px) 
 
 {
 
@@ -527,7 +669,92 @@ footer .liste
     justify-content: space-between;
     flex-direction: row-reverse;
 }
+/*populaire*/
 
+.populaire figure
+{
+    
+   
+   width: 340px;
+   width: 100%;
+}
+
+
+.populaire img 
+{
+    
+    width: 140px;
+    height: 100%;
+   
+}
+
+.populaire figcaption
+{
+    
+    width: 200px;
+    height: 100%;
+     
+   
+}
+
+/*Activité*/
+
+
+   .activite
+   {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+        align-content: stretch;
+   }
+.high
+{
+    background-color: aqua;
+    min-height: 450px;
+    height: 100%;
+    
+}
+.activite .li 
+{
+    height: 100%;
+    width: 300px;
+}
+.high img
+{
+    min-height: 380px;
+}
+.activite figure
+
+{
+    
+    width: 100%;
+    max-width: 300px;
+    margin: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px #F2F2F2;  
+     
+}
+.activite figure .high
+{
+    height: 100%;
+}
+.activite figure .high img 
+{
+   height: 390px;
+
+}
+
+.activite figure .small
+{
+    max-height: 200px;
+}
+
+.activite figcaption
+{
+    
+    width: 100%;
+    max-height: 55px;
+}
 
    footer .liste
 {
