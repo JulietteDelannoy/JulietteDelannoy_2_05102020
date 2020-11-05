@@ -27,12 +27,16 @@ ul
 {
     list-style: none;
 }
+body
+{
+    margin: 2em;
+}
 /*Header*/
 
 .top_line img
 {
     height: 3em;
-    margin-left:1.2em; 
+    
 }
 .subscrib
 {
@@ -65,7 +69,7 @@ ul
  
 .top_line li
 {
-    padding-left:2em;
+  
     padding-top: 2em;
     padding-bottom: 1.3em;
     width: 50%;
@@ -210,6 +214,7 @@ h1
 border:none
 }
 
+/*disponible*/
 
 .disponible
 {
@@ -226,11 +231,13 @@ border:none
     border: 1px solid #DEEBFF ;
     background-color: #FFFFFF;
     border-radius: 50%;
-    padding: 0.3em 0.7em;
+    padding: 0.5em 0.9em;
+    padding-right: 1.1em;
     width: 0.1em;
     align-items: center;
     justify-content: center;
     margin-right: 0.2em; 
+    font-size: 0.7em;
 }
 
 /*section1 hebergement */
@@ -242,21 +249,25 @@ border:none
 .blue
 {
     color: #0065FC;
+    font-size: 0.7em;
 }
 
 .grey
 {
-    color: #F2F2F2
+    color: #F2F2F2;
+    font-size: 0.7em;
 }
 
 .hotel figure
 
 {
-    border: #FFFFFF 3px solid;
+    border: #FFFFFF 4px solid;
     border-radius: 15px;
     box-shadow: #F2F2F2 0px 5px 8px ;
     padding: 0px;
     margin: 1em;
+    margin-bottom: 00.6em;
+    margin-top: 0.2em;
     max-height: 200px;
     max-width: 500px;
    
@@ -280,21 +291,35 @@ ul
     margin: 0px;
     padding: 0px;
 }
-figure  p
+.hotel figure  p
 {
     margin: 0px;
-    margin-bottom: 0.4em;
+    margin-bottom: 0em;
     margin-left: 00.4em;
         font-size: 0.9em;
+        font-weight: 500;
 }
 
 figure h4
 {
     margin: 0px;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
     margin-left: 00.6em;  
 
 }
+.hosting h3
+{
+    margin-left: 1em;
+    font-weight: 700;
+}
+
+.hosting figcaption p
+{
+    font-size: 0.9em;
+    padding-left: 0.4em;
+    padding-bottom: 0.4em;
+}
+
 
 .price
 {
@@ -317,6 +342,7 @@ background-color: #F2F2F2;
 max-width: 550px;
 padding: 1em;
 padding-bottom: 2em;
+border-radius: 15px;
 
 
 }
@@ -326,6 +352,7 @@ padding-bottom: 2em;
 {
     display: flex;
     justify-content: space-between;
+
   
 }
 
@@ -389,12 +416,10 @@ padding-bottom: 2em;
 /*section 2 activite*/
 
 
-
-
-/*Activite*/
 .section2
 {
     margin: 1em;
+    margin-top: 3em;
 }
 
 .activite h2
@@ -567,11 +592,16 @@ padding-top: 2em;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
-
+/*Hebergement*/
 .hosting
 {
     background-color: #F2F2F2;
     width: 70%;
+}
+
+.hotel figure 
+{
+    background-color: #FFFFFF;
 }
 
 
@@ -589,7 +619,7 @@ padding-top: 2em;
 .populaire img 
 {
     
-    width: 140px;
+    width: 40%;
     height: 100%;
    
 }
@@ -597,11 +627,14 @@ padding-top: 2em;
 .populaire figcaption
 {
     
-    width: 200px;
+    width: 60%;
     height: 100%;
      
    
 }
+
+
+/*activite tablette*/
 .activite
 {
     display: flex;
@@ -633,7 +666,7 @@ footer .liste
 }
 }
  
-/* règles CSS pour  ordi  */
+/* règles CSS pour  destop  */
 @media all and (min-width:1200px) 
 
 {
@@ -661,7 +694,7 @@ footer .liste
    {
        display: none;
    }
-
+/*section 1 Destop*/
 
    .section1
 {
@@ -669,21 +702,24 @@ footer .liste
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-/*populaire*/
+/*populaire destop*/
+.populaire
+{
+    border-radius: 15px;
+    width: 30%;
+}
 
 .populaire figure
 {
-    
-   
+
    width: 340px;
-   width: 100%;
+   height: 140px;
 }
 
-
 .populaire img 
-{
+{ 
     
-    width: 140px;
+    width: 40%;
     height: 100%;
    
 }
@@ -691,13 +727,41 @@ footer .liste
 .populaire figcaption
 {
     
-    width: 200px;
+    width: 60%;
     height: 100%;
      
    
 }
 
-/*Activité*/
+/*Hosting destop*/
+
+.hotel figure
+
+{
+  
+    max-height: 200px;
+    max-width: 250px;
+    background-color: #FFFFFF;
+   
+   
+}
+
+.hotel
+{
+    justify-content: space-around;
+    max-height: 630px;
+}
+
+.hosting
+{
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 15px;
+    max-width: 1100px;
+    padding-left: 0.4em;
+}
+
+/*Activité Destop*/
 
 
    .activite
@@ -706,6 +770,7 @@ footer .liste
        flex-wrap: wrap;
        justify-content: space-between;
         align-content: stretch;
+        
    }
 .high
 {
@@ -731,24 +796,29 @@ footer .liste
     max-width: 300px;
     margin: 0px;
     border-radius: 15px;
-    box-shadow: 0px 5px 4px #F2F2F2;  
+    box-shadow: 0px 5px 4px #c2c0c0;  
      
 }
 .activite figure .high
 {
     height: 100%;
 }
-.activite figure .high img 
+/*.activite figure .high img 
 {
    height: 390px;
 
-}
+}*/
 
 .activite figure .small
 {
     max-height: 200px;
 }
-
+.short_img
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .activite figcaption
 {
     
