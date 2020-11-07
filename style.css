@@ -27,15 +27,37 @@ ul
 {
     list-style: none;
 }
-body
+
+
+figure:hover
 {
-    margin: 2em;
+    transform: scale(1.015); 
+    transition: all 0.3s;
 }
 /*Header*/
+
+h1
+{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.title
+{
+    
+    margin: 1em;
+    margin-right: 2.5em;
+}
+.title p
+{
+    font-weight: 500;
+}
+
 
 .top_line img
 {
     height: 3em;
+    margin-left: 2em;
     
 }
 .subscrib
@@ -58,6 +80,7 @@ body
     justify-content: space-between;
     padding:0px;
     
+    
 }
 
 
@@ -72,8 +95,10 @@ body
   
     padding-top: 2em;
     padding-bottom: 1.3em;
+    padding-left: 2em;
     width: 50%;
     border-bottom: 3px solid #F2F2F2;
+    margin: 0px;
 }
 
 
@@ -90,23 +115,7 @@ justify-content: space-between;
     margin: 1.8em;
 }
 
-/*body*/
 
-h1
-{
-    font-size: 1.4em;
-    font-weight: bolder;
-}
-.title
-{
-    
-    margin: 1.2em;
-    margin-right: 2.5em;
-}
-.title p
-{
-    font-weight: 500;
-}
 
 /*filtre lieu */
 
@@ -175,6 +184,8 @@ h1
     padding: 0px;
 }
 
+/*Filtre */
+
 .filter p:last-child {
     padding: 0 10px;
 }
@@ -187,6 +198,13 @@ h1
     align-items: center;
     transition: all 0.4s ease-in-out;
     margin: 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.filter .fas
+{
+    font-size: 1.2em;
 }
 
 .filter p {
@@ -206,6 +224,7 @@ h1
 {
     border: 3px solid #0065FC;
     cursor: pointer;
+    background-color: #DEEBFF;
 
 }
 
@@ -270,8 +289,11 @@ border:none
     margin-top: 0.2em;
     max-height: 200px;
     max-width: 500px;
-   
+    
 }
+
+
+
 
 .hotel 
 {
@@ -430,8 +452,7 @@ border-radius: 15px;
 }
 .activite figure
 
-{
-    
+{ 
     width: 100%;
     max-width: 445px;
     margin: 0px;
@@ -457,6 +478,62 @@ border-radius: 15px;
 }
 
 
+.activite
+{
+    display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  
+  }
+
+
+  .one
+  {
+    
+    width: auto;
+   
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  
+  .two
+  {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .three
+  {
+    
+    max-height: 170px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .four
+  {
+    
+    
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .five
+  {
+    grid-column: 4;
+    grid-row: 1;
+    
+  }
+  
+  
+  .six
+  
+  {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+
+
 /*footer*/
 
 
@@ -480,11 +557,12 @@ ul
     
 }
 
-footer ul
+footer h2
 {
 
   
-    font-size: 0.8rem;
+    font-size: 1.1em;
+    font-weight: 700;
    
 }
 
@@ -492,7 +570,7 @@ footer li
 {
     justify-content: space-between;
     padding-top: 0.6em;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -522,6 +600,8 @@ footer li a:hover
     border-bottom: 3px solid #0065FC;
     padding-bottom: 1.3em;
     cursor: pointer;
+    border-bottom-width: 50%;
+  
 }
 .search_place .button_destop
 {
@@ -540,6 +620,10 @@ footer li a:hover
     height: 15%;
 }
 
+.populaire
+{
+    border-radius: 0px;
+}
 .activite img
 {
     height: auto;
@@ -579,8 +663,12 @@ padding-top: 2em;
     color: #0065FC;
     border-top: #0065FC solid 3px;
     cursor: pointer;
+    padding-top: 1.3em;
+    border-bottom-width: 200px ;
 }
 
+   
+  
 .search_place .button .fas
 {
     display: none;
@@ -779,11 +867,7 @@ footer .liste
     height: 100%;
     
 }
-.activite .li 
-{
-    height: 100%;
-    width: 300px;
-}
+
 .high img
 {
     min-height: 380px;
@@ -803,11 +887,6 @@ footer .liste
 {
     height: 100%;
 }
-/*.activite figure .high img 
-{
-   height: 390px;
-
-}*/
 
 .activite figure .small
 {

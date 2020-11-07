@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="style.css"/> 
 		<link rel="stylesheet" href ="reservia_files/fontawesome-free-5.15.1-web/css/all.min.css"/> <!-- dossier icones-->
 		<title>Reservia</title>
-   </head>	
+ </head>	
+
 <body>
 
 <!--Header mobile-->
@@ -66,22 +69,15 @@
                    
                      <form method="post" action="traitement.php" class="form">
         
-                     <input type="text" name="ville" class="ville" placeholder="Marseille, France" size="20" maxlenght="20"/>
+                     <input type="text" name="ville" class="ville" placeholder="Marseille, France" size="20"/>
                      <button type="button" class="button">
                          <span class="button_destop">Rechercher</span> <!--bouton pour destop -->
                          <i class="fas fa-search"></i> <!--bouton pour mobile-->
                     </button>
-                 
-                
-           
                 </form>
-        
-            
             </div>
         </p>
-
-</section>
-
+    </section>
  <!-- Section 2 Selection options -->
 <section class="search_option">
 	<h3> Filtres </h3>
@@ -164,7 +160,7 @@
                     <img src="reservia_files/aw-creative-VGs8z60yT2c-unsplash.jpg" title="Au coeur de l'eau" alt="Au coeur de l'eau"/>
                         <figcaption>
                             <div>
-                                <h4>Au coeur de l'eau <br/> Chambres d'hôtes</h2></h4>
+                                <h4>Au coeur de l'eau <br/> Chambres d'hôtes</h4>
                                 <p>Nuit à partir de 71<span class="price">€</span></p>
                             </div>
                         <aside>
@@ -343,7 +339,7 @@
 			
 			
 				<a href="#">
-                <figure>
+                <figure class="one">
                    	<p><img src="reservia_files/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" title="Vieux port" alt="Vieux port"  class="high"/></p>	
 			 		<figcaption> <p><h2>Vieux Port</h2></p>
 					</figcaption>
@@ -354,7 +350,7 @@
             <div class="short_img">
 		
 				<a href="#">
-				<figure >		
+				<figure class="two">		
 					<p><img src="reservia_files/paul-hermann-QFTrLdQIRhI-unsplash.jpg" title="Fort de Pomègues" alt="Fort de Pomègues" class="small"/>
 				<figcaption><h2>Fort de Pomègues</h2></p>
 				</figcaption>
@@ -364,7 +360,7 @@
 		
 		
 				<a href="#">
-				<figure >
+				<figure class="three">
 			<p><img src="reservia_files/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" title="Iles du Frioul" alt="Iles du Frioul" class="small"/>
 			<figcaption><h2>Iles du Frioul</h2></p>
 			</figcaption>
@@ -374,7 +370,7 @@
 	
 			
 				<a href="#">
-				<figure>
+				<figure class="four">
 					<p>		<img src="reservia_files/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" title="Parc National des Calanques" alt="Parc National des Calanques" class="high"/>
 				<figcaption><h2>Parc National des Calanques</h2></p>
 				</figcaption>
@@ -384,7 +380,7 @@
             <div class="short_img"> 
 			
 				<a href="#">
-				<figure>
+				<figure class="five">
 					<p>		<img src="reservia_files/florian-wehde-xW9e8gdotxI-unsplash.jpg" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" class="small"/>
 				<figcaption><h2>Notre-Dame-de-la-Garde</h2></p>
 				</figcaption>
@@ -395,7 +391,7 @@
 	
 			
 				<a href="#">
-				<figure>			
+				<figure class="six">			
 					<p> 	<img src="reservia_files/lena-paulin-wH2-EJoDcV0-unsplash.jpg" title="Parc Longchamp" alt="Parc Longchamp" class="small"/>
 				<figcaption><h2>Parc Longchamp</h2></p>
 				</figcaption>
@@ -409,23 +405,23 @@
 <!-- Footer -->
 <footer>
 	<section class= "liste">
-	<ul><h2> A propos</h2>
-        <li><a href="#">Fonctionnement du site</a></li>
+	<h2> A propos</h2>
+    <ul>    <li><a href="#">Fonctionnement du site</a></li>
         <li><a href="#">Condition générales de vente</a></li>
 		<li><a href="#">Données et confidentialités</a></li>
 	</ul>
 	</section>
 
 	<section class=liste>
-	<ul> <h2>Nos hébergements </h2>
-		<li> <a href="#"> Charte qualité</a></li>
+	 <h2>Nos hébergements </h2>
+	<ul>	<li> <a href="#"> Charte qualité</a></li>
 		<li><a href="#">Soumettre votre hôtel</a></li>
 	</ul>
 	</section>
 
 	<section class=liste>
-	<ul> <h2>Assistance </h2>
-		<li><a href="#">Centre d'aide</a></li>
+	 <h2>Assistance </h2>
+	<ul>	<li><a href="#">Centre d'aide</a></li>
 		<li><a href="#">Nous contacter</a></li>
 	</ul>
 	</section>
